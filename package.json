@@ -1,0 +1,16 @@
+{
+  "name": "trembeddeddevtool",
+  "version": "0.0.1",
+  "description": "Easy debugging for Table Realms peer to peer games",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kobus Van der Walt",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "find-free-port": "^2.0.0",
+    "ip": "^1.1.5"
+  }
+}

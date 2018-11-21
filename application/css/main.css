@@ -1,0 +1,9 @@
+.navbar {
+  background-color: #3f1141;
+  margin-bottom: 2rem;
+}
+
+#qrcode > img {
+  margin: auto;
+  width: 100%;
+}

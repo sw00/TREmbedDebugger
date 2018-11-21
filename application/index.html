@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>TR Embedded Dev Tool</title>
+
+    <!-- Dependencies -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <nav class="navbar text-center sticky-top">
+    <h3 class="mx-auto text-light">TR Embedded Debugger</h3>
+  </nav>
+
+  <body>
+    <div class="container">
+      <div class="row">        
+        <div class="col-md-6">
+          <div class="card my-2">
+            <div class="card-body">
+              <h3>Build source:</h3>
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">URL : </span>
+                  </div>
+                  <input id="gameURLInputField" type="text" class="form-control" value="http://192.0.0.1:8000/game" aria-label="url" aria-describedby="basic-addon1" 
+                  onchange="gameUrlChanged();" onkeyup="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();">
+              </div>
+              <h3>QR code:</h3>
+              <div id="qrcode" class="text-center img-fluid" style="width: 100%; height: auto"></div>              
+            </div>
+
+            <div class="card-footer">
+                <button type="button" class="btn btn-primary btn-block my-1" onclick="gameUrlChanged()">New Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- TODO : Implement websocket connection to backend
+      <div class="row">
+        <div class="col-md-12"> 
+          <div class="card my-2">
+            <div class="card-body">
+              <h3>Server console:</h3>
+              <textarea class="form-control" style="height:300px" aria-label="With textarea"></textarea>              
+            </div>
+
+            <div class="card-footer">
+                <button type="button" class="btn btn-warning btn-block my-1">Clear console</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </body>
+
+  <!-- Application code -->
+  <script src="js/qrcode.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Dependencies -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,13 @@
+{
+"companyName": "Red Oxygen",
+"productName": "Meteors",
+"dataUrl": "[Build] Meteors.data.unityweb",
+"wasmCodeUrl": "[Build] Meteors.wasm.code.unityweb",
+"wasmFrameworkUrl": "[Build] Meteors.wasm.framework.unityweb",
+"TOTAL_MEMORY": 16777216,
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}

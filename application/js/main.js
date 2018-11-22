@@ -42,6 +42,11 @@ function gameUrlChanged() {
   GenerateQRCode();
 }
 
+function openConsoleMode() {
+  let gameURLElement = document.getElementById("gameURLInputField");  
+  window.open(gameURLElement.value);  
+}
+
 // Application entry point
 function Main () {
   const Http = new XMLHttpRequest();

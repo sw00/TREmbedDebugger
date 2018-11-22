@@ -25,9 +25,10 @@
               <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">URL : </span>
-                  </div>
+                  </div>                  
                   <input id="gameURLInputField" type="text" class="form-control" value="http://192.0.0.1:8000/game" aria-label="url" aria-describedby="basic-addon1" 
                   onchange="gameUrlChanged();" onkeyup="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();">
+                  <button type="button" class="btn btn-primary btn-block my-1" onclick="openConsoleMode()">Console Mode</button>
               </div>
               <h3>QR code:</h3>
               <div id="qrcode" class="text-center img-fluid" style="width: 100%; height: auto"></div>              
